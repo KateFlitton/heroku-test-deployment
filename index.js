@@ -1,3 +1,6 @@
+const cors = require('cors');
+app.use(cors());
+
 const express = require('express');
 const app = express();
 
@@ -10,3 +13,8 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
    console.log(`app running on port ${PORT}`)
 });
+
+
+git add .
+git commit -m "Add CORS middleware"
+git push
